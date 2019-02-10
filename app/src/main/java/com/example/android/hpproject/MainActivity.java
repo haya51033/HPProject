@@ -18,6 +18,7 @@ import android.view.MenuItem;
 
 import com.example.android.hpproject.Activity.LoginActivity;
 import com.example.android.hpproject.Activity.RegistrationActivity;
+import com.example.android.hpproject.Activity.StartActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity
 
         /////////////////
 
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, StartActivity.class);
         startActivity(intent);
 
 
