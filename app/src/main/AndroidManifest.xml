@@ -30,8 +30,11 @@
             android:label="@string/welcome">
 
         </activity>
+        <activity android:name=".Activity.DrugsActivity"
+            android:label="@string/home_drugs"></activity>
+        <activity android:name=".Activity.DrugActivity"></activity>
         <provider
-            android:authorities="com.example.android.homepharmacyproject"
+            android:authorities="com.example.android.hpproject"
             android:name="com.example.android.hpproject.Database.HPContentProvider"
             android:exported="false" />
     </application>

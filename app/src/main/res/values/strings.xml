@@ -20,6 +20,14 @@
     <string name="action_settings">Settings</string>
     <string name="reminder_question">Select a Reminder Question:</string>
     <string name="reminder_answer">your Reminder Answer</string>
+    <string name="drug_c_name">commercial name</string>
+    <string name="drug_s_name">scientific name</string>
+    <string name="concentration">concentration</string>
+    <string name="home_drugs">Home Drugs</string>
+    <string name="drugs">Drugs</string>
+    <string name="members">Members</string>
+    <string name="search">Search</string>
+    <string name="first_aid">First Aid</string>
 
     <string-array name="array_question">
 

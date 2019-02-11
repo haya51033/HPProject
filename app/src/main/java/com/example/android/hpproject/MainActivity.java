@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.android.hpproject.Activity.HomeActivity;
 import com.example.android.hpproject.Activity.LoginActivity;
 import com.example.android.hpproject.Activity.RegistrationActivity;
 import com.example.android.hpproject.Activity.StartActivity;

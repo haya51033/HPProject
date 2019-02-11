@@ -1,5 +1,7 @@
 package com.example.android.hpproject.Activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -24,19 +26,26 @@ public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
     GridView androidGridView;
 
+   /* String[] gridViewString = {
+            getResources().getString(R.string.drugs), getResources().getString(R.string.members),
+            getResources().getString(R.string.search), getResources().getString(R.string.first_aid),
+    } ;*/
     String[] gridViewString = {
-            "Drugs", "Members", "Search", "FirstAid",
+            "Drugs", "Members",
+            "Search", "First Aid",
     } ;
     int[] gridViewImageId = {
             R.drawable.drug_icon, R.drawable.member_icon, R.drawable.search_icon, R.drawable.aid_icon,
 
     };
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        context = getApplicationContext();
         ////NAV DRAWER /////
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -68,7 +77,13 @@ public class HomeActivity extends AppCompatActivity
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int i, long id) {
-                Toast.makeText( HomeActivity.this, "GridView Item: " + gridViewString[+i], Toast.LENGTH_LONG).show();
+             //   Toast.makeText( HomeActivity.this, "GridView Item: " + gridViewString[+i], Toast.LENGTH_LONG).show();
+
+                if(i==0){
+                    Intent intent = new Intent(getApplicationContext(), DrugsActivity.class);
+                    startActivity(intent);
+                }
+
             }
         });
 

@@ -4,7 +4,7 @@ import android.provider.BaseColumns;
 
 public class DataContract {
 
-    public static final String AUTHORITY ="com.example.android.homepharmacyproject";
+    public static final String AUTHORITY ="com.example.android.hpproject";
     public static final Uri BASE_CONTENT_URI =Uri.parse("content://"+AUTHORITY);
     public static final String PATH_USER = "app_users";
     public static final String PATH_MEMBERS = "app_members";
